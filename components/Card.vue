@@ -15,7 +15,7 @@
           </p>
           <div class="flex item-center justify-between mt-3">
             <h1 class="text-gray-700 font-bold text-xl">
-              {{ product.price }} <span class="font-normal">{{ product.currency }}</span>
+              {{getPrice}} <span class="font-normal">{{ getCurrentCurrency }}</span>
             </h1>
             <button
               class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
@@ -30,6 +30,28 @@
 </template>
 <script>
 export default{
-  props: ['product']
+  props: ['product'],
+  data(){
+    return {
+
+    }
+  },
+  computed:{
+    getCurrentCurrency(){
+      return this.$store.state.currentCurrency;
+    },
+    products(){
+      return this.$store.state.products;
+    },
+    getPrice(){
+      if(this.getCurrentCurrency==="PLN"){
+        return parseFloat(this.product['price']).toFixed(2);
+      }else if(this.getCurrentCurrency==="USD"){
+        return parseFloat(this.product['price']/4).toFixed(2);
+      }else if(this.getCurrentCurrency==="EUR"){
+        return parseFloat(this.product['price']/4.5).toFixed(2);
+      }
+    }
+  }
 }
 </script>

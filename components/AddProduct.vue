@@ -1,7 +1,7 @@
 <template lang="">
 <section>
     <h1 class="text-2xl ml-3" id="add-product">Dodaj produkt</h1>
-    <div class="w-1/2 flex flex-col justify-center p-8">
+    <div class="lg:w-1/2 flex flex-col justify-center p-8">
         <div class="flex flex-col bg-red-400 p-8">
             <input v-model="productName" class=" rounded w-full my-4 py-2 px-8 text-gray-700" type="text" placeholder="Tytuł" required>
             <input v-model="description" class=" rounded w-full my-4 py-2 px-8 text-gray-700" type="text" placeholder="Opis">
@@ -20,7 +20,7 @@
             </select>
         </div>
     </div>
-    <div class="w-1/2 flex flex-col justify-center p-8">
+    <div class="lg:w-1/2 flex flex-col justify-center p-8">
         <p>Product name: {{productName}}</p>
         <p>Opis: {{description}}</p>
         <p>Kategoria: {{category}}</p>
@@ -45,10 +45,10 @@ export default {
         addElement(){
             this.$store.commit("add_product", {
                 productName: this.productName,
-            description: this.description,
-            category: this.category,
-            price: this.price,
-            currency: this.currency,
+                description: this.description,
+                category: this.category,
+                price: this.price,
+                currency: this.currency,
             })
         }
     }

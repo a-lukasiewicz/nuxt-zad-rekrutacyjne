@@ -21,7 +21,8 @@ export const state = () => ({
             price: 200,
             currency: "PLN"
         },
-    ]
+    ],
+    currentCurrency: "PLN",
 })
 
 export const mutations = {
@@ -30,11 +31,8 @@ export const mutations = {
 	},
     sort(){
         state.products.sort((a,b)=> a['price']-b['price']);
-    }
-}
-
-export const getters = {
-    sort_ascending(){
-
+    },
+    changeCurrency(state,currency){
+        state.currentCurrency=currency;
     }
 }
