@@ -5,17 +5,17 @@
         <div class="w-1/3 bg-cover bg-red-400" />
         <div class="w-2/3 p-4">
           <h1 class="text-gray-900 font-bold text-2xl">
-            {{ productName }}
+            {{ product.productName }}
           </h1>
           <p class="mt-2 text-gray-600 text-sm">
-            {{ description }}
+            {{ product.description }}
           </p>
           <p class="mt-2 text-gray-600 text-sm">
-            Kategoria: {{ category }}
+            Kategoria: {{ product.category }}
           </p>
           <div class="flex item-center justify-between mt-3">
             <h1 class="text-gray-700 font-bold text-xl">
-              {{ price }} <span class="font-normal">{{ currency }}</span>
+              {{ product.price }} <span class="font-normal">{{ product.currency }}</span>
             </h1>
             <button
               class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
@@ -30,6 +30,6 @@
 </template>
 <script>
 export default{
-  props: ['productName', 'description', 'category', 'price', 'currency']
+  props: ['product']
 }
 </script>
