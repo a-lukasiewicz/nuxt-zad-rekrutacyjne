@@ -1,0 +1,19 @@
+<template lang="">
+    <div class="flex justify-center   lg:justify-end lg:mr-12">
+        <button
+              class="px-3 py-2 mx-6 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+            >
+              Sortuj rosnąco
+            </button>
+            <button
+              class="px-3 py-2 mx-6 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+            >
+              Sortuj malejąco
+            </button>
+    </div>
+</template>
+<script>
+export default {
+    
+}
+</script>
