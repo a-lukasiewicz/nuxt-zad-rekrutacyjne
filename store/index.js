@@ -29,9 +29,6 @@ export const mutations = {
 	add_product(state, product) {
 		state.products.push(product);
 	},
-    sort(){
-        state.products.sort((a,b)=> a['price']-b['price']);
-    },
     changeCurrency(state,currency){
         state.currentCurrency=currency;
     }

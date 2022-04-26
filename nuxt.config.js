@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'task',
+    title: 'Zadanie rekrutacyjne Nuxt.js',
     htmlAttrs: {
       lang: 'en'
     },
