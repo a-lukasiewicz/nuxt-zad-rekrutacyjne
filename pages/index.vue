@@ -2,8 +2,12 @@
   <main>
     <Header></Header>
     <SearchBar></SearchBar>
-    <SortButtons></SortButtons>
+    <!-- <SortButtons></SortButtons> -->
+    <section class="min-h-screen">
     <CardsGallery></CardsGallery>
+
+    </section>
+    <AddProduct></AddProduct>
   </main>
 </template>
 

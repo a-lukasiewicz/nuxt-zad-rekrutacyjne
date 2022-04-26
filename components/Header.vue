@@ -1,15 +1,10 @@
 <template lang="">
     <header class='flex items-center justify-center lg:justify-end lg:mr-12 pt-6'>
-        <button
-              class="px-3 py-2 mx-6 bg-gray-800 text-white text-xs font-bold uppercase rounded"
-            >
-              Dodaj nową kategorię
-            </button>
-            <button
+            <a href="#add-product"
               class="px-3 py-2 mx-6 bg-gray-800 text-white text-xs font-bold uppercase rounded"
             >
               Dodaj nowy produkt
-            </button>
+            </a>
             <button
               class="px-3 py-2 mx-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
             >

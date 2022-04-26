@@ -6,7 +6,7 @@
       <input
         type="text"
         v-model="productName"
-        placeholder="Search for products"
+        placeholder="Wyszukaj produkt po nazwie"
         class="w-full h-full text-2xl rounded-lg"
       />
     </div>

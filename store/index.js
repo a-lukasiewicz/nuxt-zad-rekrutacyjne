@@ -25,7 +25,16 @@ export const state = () => ({
 })
 
 export const mutations = {
-	ADD_PRODUCT(state, product) {
-		state.products = [{ content: product, done: false }, ...state.products];
+	add_product(state, product) {
+		state.products.push(product);
 	},
+    sort(){
+        state.products.sort((a,b)=> a['price']-b['price']);
+    }
+}
+
+export const getters = {
+    sort_ascending(){
+
+    }
 }
